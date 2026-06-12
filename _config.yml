@@ -12,11 +12,12 @@ description: >-
   A collaborative digital edition exploring the 3D models of the
   Ruthwell, Bewcastle, and Brussels crosses.
 
-# baseurl: the subpath of your site, e.g. /visionary-cross-project for
-# a GitHub Pages project site. Leave blank for a user/org or custom domain.
+# baseurl: leave blank here. The Pages workflow injects the correct subpath
+# (/visionary-cross-project) at build time via --baseurl, and local `jekyll
+# serve` then works at the root. Pages use relative_url, so both resolve.
 baseurl: ""
-# url: the base hostname & protocol, e.g. https://example.com
-url: ""
+# url: the base hostname & protocol for the published site.
+url: "https://Jocelyn-McKnight.github.io"
 
 # ---------------------------------------------------------
 # Per-cross repositories.
