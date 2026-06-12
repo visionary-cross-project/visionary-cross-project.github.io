@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Generated locally on Windows with platform-specific gems; let CI (Linux
+# container) resolve its own. Remove this line if you want a committed lockfile.
+Gemfile.lock
