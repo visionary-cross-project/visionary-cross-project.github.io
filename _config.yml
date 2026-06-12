@@ -1,0 +1,47 @@
+# =========================================================
+# Visionary Cross Project — site settings
+# =========================================================
+# This repository holds the front matter and back matter for the
+# Visionary Cross Project. Each cross (Ruthwell, Bewcastle, Brussels)
+# lives in its own repository; set the base URLs below so the shared
+# navigation can link out to them once they are published.
+
+title: Visionary Cross Project
+email: humanitiesinnovationlab@gmail.com
+description: >-
+  A collaborative digital edition exploring the 3D models of the
+  Ruthwell, Bewcastle, and Brussels crosses.
+
+# baseurl: the subpath of your site, e.g. /visionary-cross-project for
+# a GitHub Pages project site. Leave blank for a user/org or custom domain.
+baseurl: ""
+# url: the base hostname & protocol, e.g. https://example.com
+url: ""
+
+# ---------------------------------------------------------
+# Per-cross repositories.
+# Replace "#" with each cross site's base URL once it is published,
+# e.g. https://jocelyn-mcknight.github.io/ruthwell
+# The shared nav appends page paths like /intro.html to these.
+# ---------------------------------------------------------
+crosses:
+  ruthwell: "#"
+  bewcastle: "#"
+  brussels: "#"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Sass: partials live in _sass/, compiled via assets/css/main.scss.
+# "expanded" keeps the generated CSS readable; use "compressed" to minify.
+sass:
+  style: expanded
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md

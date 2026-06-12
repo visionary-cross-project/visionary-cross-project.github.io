@@ -1,0 +1,108 @@
+/* =========================================================
+   GENERAL PAGE CONTENT
+   ========================================================= */
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ---------- Two-column layout ---------- */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: stretch;
+
+  width: min(1200px, calc(100% - 6rem));
+  margin: 3rem auto;
+
+  background: #f8f8f8;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.left {
+  flex: 1;
+  width: 50%;
+  background: #d8d8d8;
+  padding: 0;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.right {
+  flex: 1;
+  width: 50%;
+  background: #f8f8f8;
+  padding: 4rem 5rem;
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+/* ---------- Shared image rules ---------- */
+
+.left img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* ---------- Hover image helper ---------- */
+
+.image-container {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hover-image {
+  transition: filter 0.3s ease;
+}
+
+.image-container:hover .hover-image {
+  filter: grayscale(100%);
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-family: var(--font-title);
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+

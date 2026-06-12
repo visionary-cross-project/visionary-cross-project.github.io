@@ -1,0 +1,69 @@
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+<nav class="landing-nav" aria-label="Main navigation">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ site.crosses.ruthwell }}">Ruthwell</a>
+  <a href="{{ site.crosses.bewcastle }}">Bewcastle</a>
+  <a href="{{ site.crosses.brussels }}">Brussels</a>
+
+  <label for="menu-toggle" class="menu-link">
+    Menu ☰
+  </label>
+</nav>
+
+<nav class="landing-menu" aria-label="Expanded menu">
+
+  <section>
+    <input type="checkbox" id="frontmatter-toggle" class="submenu-toggle">
+    <label for="frontmatter-toggle" class="submenu-label">Frontmatter</label>
+    <div class="submenu">
+      <a href="{{ '/frontmatter/home.html' | relative_url }}">Home</a>
+      <a href="{{ '/frontmatter/history.html' | relative_url }}">History of the Project</a>
+      <a href="{{ '/frontmatter/connections.html' | relative_url }}">Connections Between Crosses</a>
+    </div>
+  </section>
+
+  <section>
+    <input type="checkbox" id="ruthwell-toggle" class="submenu-toggle">
+    <label for="ruthwell-toggle" class="submenu-label">Ruthwell</label>
+    <div class="submenu">
+      <a href="{{ site.crosses.ruthwell }}/intro.html">Introduction</a>
+      <a href="{{ site.crosses.ruthwell }}/model.html">Ruthwell Model</a>
+      <a href="{{ site.crosses.ruthwell }}/history.html">History of The Ruthwell Cross</a>
+      <a href="{{ site.crosses.ruthwell }}/iconography.html">Iconography of the Ruthwell Cross</a>
+      <a href="{{ site.crosses.ruthwell }}/scan.html">Scanning Ruthwell</a>
+    </div>
+  </section>
+
+  <section>
+    <input type="checkbox" id="bewcastle-toggle" class="submenu-toggle">
+    <label for="bewcastle-toggle" class="submenu-label">Bewcastle</label>
+    <div class="submenu">
+      <a href="{{ site.crosses.bewcastle }}/intro.html">Introduction</a>
+      <a href="{{ site.crosses.bewcastle }}/model.html">Bewcastle Model</a>
+      <a href="{{ site.crosses.bewcastle }}/scan.html">Scanning Bewcastle</a>
+    </div>
+  </section>
+
+  <section>
+    <input type="checkbox" id="brussels-toggle" class="submenu-toggle">
+    <label for="brussels-toggle" class="submenu-label">Brussels</label>
+    <div class="submenu">
+      <a href="{{ site.crosses.brussels }}/intro.html">Introduction</a>
+      <a href="{{ site.crosses.brussels }}/model.html">Brussels Model</a>
+      <a href="{{ site.crosses.brussels }}/scan.html">Scanning Brussels</a>
+    </div>
+  </section>
+
+  <section>
+    <input type="checkbox" id="backmatter-toggle" class="submenu-toggle">
+    <label for="backmatter-toggle" class="submenu-label">Backmatter</label>
+    <div class="submenu">
+      <a href="{{ '/backmatter/table.html' | relative_url }}">Table of Contents</a>
+      <a href="{{ '/backmatter/research.html' | relative_url }}">Research &amp; Media</a>
+      <a href="{{ '/backmatter/glossary.html' | relative_url }}">Glossary</a>
+      <a href="{{ '/backmatter/contact.html' | relative_url }}">Contact</a>
+    </div>
+  </section>
+
+</nav>

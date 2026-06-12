@@ -1,0 +1,27 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  height: 130px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer nav a:hover {
+  color: #fff;
+}
+

@@ -1,0 +1,27 @@
+---
+# This empty front matter tells Jekyll to process this file with Sass,
+# compiling it (and the partials it imports) into /assets/css/main.css.
+---
+
+/* =========================================================
+   MAIN.SCSS — Visionary Cross Project
+   Imports the partials in _sass/. Edit those files, not the
+   compiled main.css. Order below controls the CSS cascade,
+   so keep _responsive last.
+   ========================================================= */
+
+@import "variables";
+@import "base";
+@import "header";
+@import "menu";
+@import "landing";
+@import "content";
+@import "article";
+@import "loading";
+@import "viewer";
+@import "movepad";
+@import "footer";
+@import "toc";
+@import "glossary";
+@import "research";
+@import "responsive";

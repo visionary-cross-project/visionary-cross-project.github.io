@@ -1,0 +1,144 @@
+/* =========================================================
+   LANDING PAGE — Louvre-inspired layout
+   ========================================================= */
+
+.landing-page {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+.landing-header {
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+.landing-title {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 2rem 1rem 1.5rem;
+}
+
+.landing-title-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.landing-title-link:hover .landing-title {
+  color: #ccc;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  background: #000;
+}
+
+.landing-nav a,
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+}
+
+.landing-nav a:hover,
+.menu-link:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.landing-hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.landing-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.landing-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  color: white;
+}
+
+.landing-kicker {
+  font-family: var(--font-body);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.landing-overlay h1 {
+  font-family: var(--font-title);
+  font-size: 4.8rem;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.landing-description {
+  color: #ddd;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  padding: 0.85rem 2.2rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-button:hover {
+  background: #000;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+

@@ -1,0 +1,67 @@
+/* =========================================================
+   TABLE OF CONTENTS PAGE
+   Styled card + nested list for backmatter/table.html
+   ========================================================= */
+
+.table-of-contents {
+  width: min(1000px, calc(100% - 6rem));
+  margin: 3rem auto;
+  padding: 3rem 4rem;
+
+  background: #f8f8f8;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.table-of-contents h1 {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.table-of-contents > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: 1.75rem;
+}
+
+/* top-level section labels (Front matter, Ruthwell Cross, …) */
+.table-of-contents > ul > li {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: #111;
+
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.table-of-contents ul ul {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+
+  display: grid;
+  gap: 0.4rem;
+}
+
+.table-of-contents ul ul li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.table-of-contents a {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.table-of-contents a:hover {
+  color: #8d552b;
+  border-bottom-color: #8d552b;
+}
+
