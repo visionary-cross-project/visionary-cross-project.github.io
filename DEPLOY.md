@@ -23,7 +23,7 @@ Switching to a custom domain with the **same path model** (e.g.
 
 ---
 
-## Target: SUBDOMAINS on a custom domain (the prof's preference)
+## Target: SUBDOMAINS on a custom domain
 
 Example with `visionarycross.ca`:
 
