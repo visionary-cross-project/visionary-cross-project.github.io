@@ -6,15 +6,28 @@
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ '/assets/img/cross.ico' | relative_url }}">
+  {%- if page.viewer %}
+  {%- comment %} 3DHOP viewer assets — a page opts in with `viewer: true` in its front matter. {% endcomment %}
+  <link rel="stylesheet" href="{{ '/3dhop/stylesheet/3dhop.css' | relative_url }}">
+  <script src="{{ '/3dhop/js/spidergl.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/jquery.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/presenter.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/nexus.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/ply.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/trackball_sphere.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/trackball_turntable.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/trackball_turntable_pan.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/trackball_pantilt.js' | relative_url }}"></script>
+  <script src="{{ '/3dhop/js/init.js' | relative_url }}"></script>
+  {%- endif %}
+  {%- comment %} Extra per-page stylesheets, e.g. stylesheets: ["/foo.css"] in front matter. {% endcomment %}
+  {%- for css in page.stylesheets %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {%- endfor %}
 </head>
 
-<body>
-<header class="header">
-  <a href="{{ '/' | relative_url }}">
-    <img src="{{ '/assets/img/header.jpg' | relative_url }}" alt="">
-    <div class="header-text">Visionary Cross Project</div>
-  </a>
-</header>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+{% include header.html %}
 
 {% include nav.html %}
 

@@ -1,0 +1,11 @@
+<!--
+  Shared site header. Each repo sets its own header_title and header_image in
+  _config.yml; the logo always links to the project landing page ("/"). Served
+  to the cross repos via remote_theme, so edit it here only.
+-->
+<header class="header">
+  <a href="/">
+    <img src="{{ site.header_image | relative_url }}" alt="">
+    <div class="header-text">{{ site.header_title | default: site.title }}</div>
+  </a>
+</header>

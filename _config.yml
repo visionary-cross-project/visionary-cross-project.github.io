@@ -30,6 +30,11 @@ crosses:
   bewcastle: "/bewcastle"
   brussels: "/brussels"
 
+# Shared header (rendered by _includes/header.html via the layout). header_image
+# is a baseurl-relative path, so each repo points at its own /assets/img file.
+header_title: "Visionary Cross Project"
+header_image: "/assets/img/header.jpg"
+
 # Build settings
 markdown: kramdown
 plugins:
