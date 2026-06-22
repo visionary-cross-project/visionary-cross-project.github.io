@@ -12,23 +12,23 @@ description: >-
   A collaborative digital edition exploring the 3D models of the
   Ruthwell, Bewcastle, and Brussels crosses.
 
-# baseurl: the subpath this project site is served from. This must be set so
-# that assets/links (which use relative_url) resolve to /visionary-cross-project
-# instead of the domain root (which belongs to the user-page repo). Local
-# `jekyll serve` then previews at http://localhost:4000/visionary-cross-project/.
+# baseurl: this is the user/org page repo, served from the domain root, so
+# baseurl stays empty. Links that use relative_url then resolve directly under
+# the root, e.g. /frontmatter/home.html. Local `jekyll serve` previews at
+# http://localhost:4000/.
 baseurl: ""
 url: "https://visionary-cross-project.github.io"
 
 # ---------------------------------------------------------
-# Per-cross repositories.
-# Replace "#" with each cross site's base URL once it is published,
-# e.g. https://jocelyn-mcknight.github.io/ruthwell
-# The shared nav appends page paths like /intro.html to these.
+# Per-cross repositories. Each cross is published as a project site under this
+# same domain (visionary-cross-project.github.io/<cross>), so these are
+# root-relative paths. The shared nav appends page paths like /intro.html to
+# them, producing e.g. /ruthwell/intro.html.
 # ---------------------------------------------------------
 crosses:
-  ruthwell: "#"
-  bewcastle: "#"
-  brussels: "#"
+  ruthwell: "/ruthwell"
+  bewcastle: "/bewcastle"
+  brussels: "/brussels"
 
 # Build settings
 markdown: kramdown
