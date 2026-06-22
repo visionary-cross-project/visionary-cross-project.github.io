@@ -51,3 +51,4 @@ exclude:
   - Gemfile.lock
   - vendor/
   - README.md
+  - DEPLOY.md
