@@ -16,9 +16,8 @@ description: >-
 # that assets/links (which use relative_url) resolve to /visionary-cross-project
 # instead of the domain root (which belongs to the user-page repo). Local
 # `jekyll serve` then previews at http://localhost:4000/visionary-cross-project/.
-baseurl: "/visionary-cross-project"
-# url: the base hostname & protocol for the published site.
-url: "https://Jocelyn-McKnight.github.io"
+baseurl: ""
+url: "https://visionary-cross-project.github.io"
 
 # ---------------------------------------------------------
 # Per-cross repositories.
