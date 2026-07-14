@@ -17,7 +17,7 @@ description: >-
 # the root, e.g. /frontmatter/home.html. Local `jekyll serve` previews at
 # http://localhost:4000/.
 baseurl: ""
-url: "https://visionary-cross-project.github.io"
+url: "https://sandbox.humanitiesinnovationlab.ca"
 
 # ---------------------------------------------------------
 # Per-cross repositories. Each cross is published as a project site under this
